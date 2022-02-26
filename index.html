@@ -81,7 +81,7 @@ const material = new THREE.MeshPhysicalMaterial({
 
 const loader = new PLYLoader()
 loader.load(
-    'models/02Stone50KCloud.ply',
+    '02Stone50KCloud.ply',
     function (geometry) {
         geometry.computeVertexNormals()
         const mesh = new THREE.Mesh(geometry, material)
